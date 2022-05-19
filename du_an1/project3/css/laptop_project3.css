@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+@media screen and (min-width:992px) {
+ 
+
+    a:hover{color: blue;}
+a:link {color: rgba(11, 1, 46, 0.8);}
+a{
+    text-decoration:none;
+}
+nav a{
+    color: black;    
+    text-decoration:none;
+    font-size: small;
+    text-transform: uppercase;
+} 
+nav li {
+    display: inline-block;
+}      
+
+nav{
+margin-left: 0px;
+padding-left: 5%;
+padding-right: 5%;
+box-sizing: border-box;
+}
+.stylelist1{
+    float: left;
+    list-style-type: none;
+    padding-right: 10px;
+}
+.stylelist2{
+    float: right;
+    list-style-type: none;
+    padding-left: 10px;
+}
+#banner {
+    width: 100%;
+    height: auto; 
+    position: relative;
+}
+#banner #banner1 h1{
+    display: block;
+    top:120px;
+    margin-left: 5%;
+    position: absolute; 
+    color: white;
+}
+#banner #banner1 p{
+    display: block;
+    top: 160px;
+    margin-left: 5%;
+    position: absolute; 
+    color: white;
+}
+#banner img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+#content{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: unset;
+}
+#colum {
+    width: 100%;
+    height: auto; 
+}
+#content h2{
+    max-width: 60%;
+   
+}
+#content p{
+    max-width: 60%;
+    
+}
+div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 9%;
+}
+#content1{
+    height: auto;
+    box-sizing: border-box;
+}
+#content2{
+    height: auto;
+    box-sizing: border-box;
+}
+#content3{
+
+    height: auto;
+    box-sizing: border-box;
+}
+#footer{
+    box-sizing: unset;
+    background-color: rgba(247,247,247,255) ;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+ }
+
+#footer1{
+    
+    height: auto;
+    box-sizing: border-box;
+    
+}
+#footer2{
+ 
+    height: auto;
+    box-sizing: border-box;
+
+    
+}
+#footer3{
+    
+    height: auto;
+    box-sizing: border-box;
+    
+}
+}

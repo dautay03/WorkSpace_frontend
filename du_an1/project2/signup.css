@@ -1,0 +1,85 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+
+#header1{
+    width: inherit;
+    height: 20PX;
+    padding: 0px;
+    margin-right: 5%;
+
+}
+#header2{
+    padding:0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header #header1 #header2 li{
+    float:left;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#header #header1 #header3 li{
+    float: right;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+a:hover{color: blue;}
+a:link {color: rgba(11, 1, 46, 0.486);}
+a{
+    text-decoration:none;
+}
+#banner {
+    width: 100%;
+    height: auto; 
+    position: relative;
+}
+#banner1{
+    display: block;
+    top:30px;
+    margin-left: 20%;
+    position: absolute; 
+    background-color:rgba(220, 220, 220,0.3);
+    border: 1px solid red;
+    width: 40%;
+    height: 60%;
+}
+#banner #banner1 h1{
+    width: auto;
+    display: block;
+    top:10px;
+    margin-left: 10%;
+    position: absolute; 
+    color: rgb(3, 13, 36);
+}
+#banner #banner1 p{
+    width: auto;
+    display: block;
+    top:160px;
+    margin-left: 10%;
+    position: absolute; 
+    color: rgb(11, 2, 87);
+    
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+}
+form{
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    background-color: rgba(220, 220, 220,0.7);
+    
+    display: block;
+    top: 70px;
+    position: absolute; 
+}

@@ -1,0 +1,142 @@
+body{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    
+}
+
+
+#header1{
+    width: inherit;
+    height: 20PX;
+    padding: 0px;
+    margin-right: 5%;
+
+}
+#header2{
+    padding:0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header #header1 #header2 li{
+    float:left;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#header #header1 #header3 li{
+    float: right;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+a:hover{color: blue;}
+a:link {color: rgba(11, 1, 46, 0.8);}
+a{
+    text-decoration:none;
+}
+#banner {
+    width: 100%;
+    height: auto; 
+    position: relative;
+}
+#banner #banner1 h1{
+    display: block;
+    top:120px;
+    margin-left: 5%;
+    position: absolute; 
+    color: white;
+}
+#banner #banner1 p{
+    display: block;
+    top: 160px;
+    margin-left: 5%;
+    position: absolute; 
+    color: white;
+}
+#banner img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+#content{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+    margin-top:-20px ;
+    
+}
+#colum {
+    width: 100%;
+    height: auto; 
+}
+#content h2{
+    margin-left: 5%;
+    max-width: 60%;
+    margin-bottom: -12px;
+}
+#content p{
+    margin-left: 5%;
+    max-width: 60%;
+}
+div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 9%;
+}
+#content1{
+    display: inline-block;
+    margin-left:5% ;
+    width: 28%;
+    height: auto;
+    
+}
+#content2{
+    display:inline-block;
+    margin-left: 2.9% ;
+    width: 28%;
+    height: auto;
+    
+}
+#content3{
+    display: inline-block;
+    margin-left: 2.9%;
+    width: 28%;
+    height: auto;
+    
+}
+#footer{
+    background-color: rgba(247,247,247,255) ;
+    border:1px solid rgba(247,247,247,255);
+    height: auto;
+    margin-top: -20px;
+    padding-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+ }
+
+.footer1{
+    display: inline-block;
+    margin-left:5% ;
+    width: 28%;
+    height: auto;
+}
+.footer2{
+    display:inline-block;
+    margin-left: 2.9% ;
+    width: 28%;
+    height: auto;
+}
+.footer3{
+    display: inline-block;
+    margin-left: 2.9%;
+    width: 28%;
+    height: auto;
+}
+
+
+

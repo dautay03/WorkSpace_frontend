@@ -1,0 +1,656 @@
+0
+00:00:00,000 --> 00:00:04,380
+In this series we're going to look around the most used parts of chrome
+
+1
+00:00:04,380 --> 00:00:10,830
+developer tools, and ultimately this is going to be the very basics you need to
+
+2
+00:00:10,830 --> 00:00:15,420
+improve your development. And this is mainly for front-end development; but it
+
+3
+00:00:15,420 --> 00:00:20,070
+also comes into things like making Ajax calls, which is obviously on the front
+
+4
+00:00:20,070 --> 00:00:24,600
+end; but it also allows you to then inspect content you're getting through
+
+5
+00:00:24,600 --> 00:00:29,460
+on the backend. So generally we're going to go over the four things that you're
+
+6
+00:00:29,460 --> 00:00:33,719
+most likely to use within chrome developer tools. And the other thing to
+
+7
+00:00:33,719 --> 00:00:40,620
+know is that this is the same kind of concept for tools like firebug for
+
+8
+00:00:40,620 --> 00:00:45,328
+Firefox, so even if you're not using Chrome this should still be helpful.
+
+9
+00:00:45,329 --> 00:00:50,820
+So we're gonna kick things off with the element inspector the element explorer,
+
+10
+00:00:50,820 --> 00:00:55,739
+which basically allows you to look at all of the markup on your page, how it's
+
+11
+00:00:55,739 --> 00:01:00,989
+constructed, and also going to be looking at styles as well. So first of all let's just
+
+12
+00:01:00,989 --> 00:01:05,369
+take a look at what kind of files that were working with. So in my text editor, I
+
+13
+00:01:05,369 --> 00:01:11,250
+just have a document laid out here. I have a paragraph; we obviously have all
+
+14
+00:01:11,250 --> 00:01:16,740
+the basic tags that we would use; we have a title here; and I also have this style
+
+15
+00:01:16,740 --> 00:01:20,789
+sheet just here within this CSS directory. So i'm going to go ahead and
+
+16
+00:01:20,790 --> 00:01:26,970
+just link this style sheet in. So it's css/app.css I'm going to go
+
+17
+00:01:26,970 --> 00:01:31,408
+ahead and refresh the page. So that's changed the background color to gray
+
+18
+00:01:31,409 --> 00:01:37,590
+color. We also have a style attached to our paragraph here as well. And when you
+
+19
+00:01:37,590 --> 00:01:42,270
+are developing and you are changing styles around or changing markup around,
+
+20
+00:01:42,270 --> 00:01:47,399
+Sometimes it's easier to do this within Chrome, So change all of the styles that
+
+21
+00:01:47,399 --> 00:01:51,509
+you need to within Chrome, you can go ahead and copy and paste those styles
+
+22
+00:01:51,509 --> 00:01:56,549
+back over to your style sheet, or you can just edit elements on your page just to
+
+23
+00:01:56,549 --> 00:01:57,899
+see what happens.
+
+24
+00:01:57,899 --> 00:02:03,780
+So let's take a look at the very basics of bringing up your element explorer. Now,
+
+25
+00:02:03,780 --> 00:02:08,699
+the main way I do this is just a right click on the page and hit inspect
+
+26
+00:02:08,699 --> 00:02:12,640
+element. That's the quick way to do that. But you can also access it from the
+
+27
+00:02:12,640 --> 00:02:18,130
+menu just up here. So obviously right-clicking and hitting inspect
+
+28
+00:02:18,130 --> 00:02:24,459
+element is going to bring up your element tab just here. So this panel here
+
+29
+00:02:24,459 --> 00:02:29,709
+is going to show all of the elements on your page. So for example we can go to the
+
+30
+00:02:29,709 --> 00:02:34,930
+head, we can go to our meta tags title, and our linkedin reource is just here,
+
+31
+00:02:34,930 --> 00:02:38,350
+although these are a little bit less important to what we're going to be
+
+32
+00:02:38,350 --> 00:02:44,829
+doing here. So we can traverse through these, we can modify this content
+
+33
+00:02:44,830 --> 00:02:48,220
+as well, so let's just take a quick look at doing that and then we'll move over
+
+34
+00:02:48,220 --> 00:02:53,560
+to this area here where we can see all of our styles. So for example if I wanted
+
+35
+00:02:53,560 --> 00:02:58,630
+to change this text just herea I can double click it, and I can go ahead and
+
+36
+00:02:58,630 --> 00:03:05,170
+perhaps add an extra !, hit Enter and that will automatically be reflected in
+
+37
+00:03:05,170 --> 00:03:08,079
+the browser area just here.
+
+38
+00:03:08,080 --> 00:03:11,980
+So what we can also do is we can delete elements, I'm just going to hit the
+
+39
+00:03:11,980 --> 00:03:16,959
+backspace key that goes ahead and get rid of that element. If I refresh I'll see
+
+40
+00:03:16,959 --> 00:03:21,070
+that comes back because it's being served from the file. And what we can
+
+41
+00:03:21,070 --> 00:03:25,780
+also do is right click here and edit text which we've already seen. But we can
+
+42
+00:03:25,780 --> 00:03:31,600
+also do things like edit as HTML; So we could go here we wanted to, and add
+
+43
+00:03:31,600 --> 00:03:37,630
+additional element in. So we could have a span tag just in here and we can just
+
+44
+00:03:37,630 --> 00:03:42,519
+say hello in there. So we click away from this area that's automatically updated,
+
+45
+00:03:42,519 --> 00:03:45,220
+So it's added that markup in there for you.
+
+46
+00:03:45,220 --> 00:03:51,760
+So now that we've taken a look around this, we're going to move over to this
+
+47
+00:03:51,760 --> 00:03:59,140
+area here which you're most commonly going to use for styles. So for example the
+
+48
+00:03:59,140 --> 00:04:04,450
+paragraph tag has a style attached to it we can see that inside of the style sheet
+
+49
+00:04:04,450 --> 00:04:08,170
+just here. The body has a background color as well, but we're going to be
+
+50
+00:04:08,170 --> 00:04:13,899
+focusing on this paragraph element. So the paragraph element here. We can see
+
+51
+00:04:13,900 --> 00:04:20,410
+here, first of all, the user-agent styles, and these are the default styles applied
+
+52
+00:04:20,410 --> 00:04:25,690
+to this element by the browser. We also have the complete
+
+53
+00:04:25,690 --> 00:04:29,469
+muted styles as well and we'll talk about this surfing here in just a moment;
+
+54
+00:04:29,470 --> 00:04:34,570
+but you can see that we have a display of block on this element, we have an
+
+55
+00:04:34,570 --> 00:04:40,120
+automatic height, we have a margin, and we have a width to this as well. So these are
+
+56
+00:04:40,120 --> 00:04:43,450
+just what's being computed in terms of the styles.
+
+57
+00:04:43,450 --> 00:04:47,380
+Now this here shows the box model. If you're not familiar with the box model,
+
+58
+00:04:47,380 --> 00:04:52,090
+that's okay, I guess; I'll just explain or each of these represents as we go along.
+
+59
+00:04:52,090 --> 00:04:57,760
+This part in the middle is the width and the height of this element as it sits on
+
+60
+00:04:57,760 --> 00:05:03,580
+the page. If we go up one we see any padding on this. At the moment we don't
+
+61
+00:05:03,580 --> 00:05:08,020
+actually have any padding on this element. If we were to go ahead and add,
+
+62
+00:05:08,020 --> 00:05:15,520
+say, a padding left of 20 pixels, and we go ahead and refresh here you can see
+
+63
+00:05:15,520 --> 00:05:22,030
+that the padding now represents as a green item or green box just here, 20
+
+64
+00:05:22,030 --> 00:05:25,960
+pixel white box; and this is also updated here as well to show you the
+
+65
+00:05:25,960 --> 00:05:30,280
+sizing. This is really useful when you're working with positioning elements within
+
+66
+00:05:30,280 --> 00:05:37,659
+CSS you can see each of these, say, you move your mouse cursor over them. So the
+
+67
+00:05:37,660 --> 00:05:41,500
+border here we don't have a border but if we were to we would see that border
+
+68
+00:05:41,500 --> 00:05:44,860
+and would see the sizing on this as well.
+
+69
+00:05:45,460 --> 00:05:49,599
+Notice the positioning of this, we've got 20 pixels padding on the left.
+
+70
+00:05:49,600 --> 00:05:55,120
+If we were to add a right or top border we would see that here in place of these
+
+71
+00:05:55,120 --> 00:06:01,720
+hyphens. Now we do have margin on this paragraph; we have a margin top of 16
+
+72
+00:06:01,720 --> 00:06:08,080
+pixels. I've actually removed the bottom margin. So we see that as nothing down
+
+73
+00:06:08,080 --> 00:06:13,479
+here, but if we were to leave that as a default we would see that. So this is all
+
+74
+00:06:13,480 --> 00:06:16,660
+well and good but really this doesn't help us in everyday life.
+
+75
+00:06:17,230 --> 00:06:22,930
+What does help us is that if we want to add additional styles to this paragraph we
+
+76
+00:06:22,930 --> 00:06:27,370
+can actually do that from this area here. So we can see the styles here that have
+
+77
+00:06:27,370 --> 00:06:32,290
+been applied by app.CSS and what it also does is after the call on it, it gives
+
+78
+00:06:32,290 --> 00:06:35,530
+us the line number of these styles as well.
+
+79
+00:06:36,430 --> 00:06:40,600
+We can actually click this and it will take us through to our sources tab, which we're
+
+80
+00:06:40,600 --> 00:06:44,710
+not exclusively going to be looking at in this series, but it's useful to know that
+
+81
+00:06:44,710 --> 00:06:49,780
+it's here; it just contains the files that are basically being served from
+
+82
+00:06:49,780 --> 00:06:54,429
+this page. So we can actually see this file now we're automatically taken to
+
+83
+00:06:54,430 --> 00:06:58,780
+line five where these styles have been applied. So it will be on the selector
+
+84
+00:06:58,780 --> 00:07:05,140
+level. So going back over to our element explorer how do we add or modify styles
+
+85
+00:07:05,140 --> 00:07:13,000
+within this area. Well we can do this by either clicking the value of this
+
+86
+00:07:13,000 --> 00:07:18,310
+style and we can modify the value. So we can say what we want to 20 pixel
+
+87
+00:07:18,310 --> 00:07:23,410
+margin on the bottom, we click away from this, that then adds 20 pixels margin on
+
+88
+00:07:23,410 --> 00:07:27,370
+the bottom, and you can see that represented by the orange area on the
+
+89
+00:07:27,370 --> 00:07:33,310
+page just there. And we can even add new styles. So say we wanted to - just revert
+
+90
+00:07:33,310 --> 00:07:37,600
+this back to zero - and we wanted to do just a few more things on this paragraph.
+
+91
+00:07:37,600 --> 00:07:44,050
+So let's say for some reason we want to, say, we want the width of 50-percent. Let's
+
+92
+00:07:44,050 --> 00:07:50,230
+say we want there to be a 1 pixel border and that be solid and black, we can do
+
+93
+00:07:50,230 --> 00:07:58,180
+that, and then we could go ahead and, say, well, let's give this a foreground color
+
+94
+00:07:58,180 --> 00:08:01,270
+of red. So just something really ugly.
+
+95
+00:08:01,270 --> 00:08:04,750
+We've now got all of our styles; we're not going to want to refresh the page
+
+96
+00:08:04,750 --> 00:08:07,930
+because what that will do is it will pull through the app called CSS
+
+97
+00:08:07,930 --> 00:08:12,670
+stylesheet and reapply the styles that we actually have. This is a really useful
+
+98
+00:08:12,670 --> 00:08:18,700
+way to develop within the browser. So you can actually see your changes live on
+
+99
+00:08:18,700 --> 00:08:23,530
+the page, and what you can then do is just go ahead and copy all of these, or
+
+100
+00:08:23,530 --> 00:08:28,179
+just the ones that you want, so copy them to the clipboard, I'm gonna go here and
+
+101
+00:08:28,180 --> 00:08:32,289
+I'm just going to paste them in. We can just align these up if we want to,
+
+102
+00:08:32,289 --> 00:08:38,079
+and there we go. So we've now got them styles in here. So everything has come
+
+103
+00:08:38,080 --> 00:08:42,610
+through as expected. We can go ahead and refresh and the same styles're obviously
+
+104
+00:08:42,610 --> 00:08:46,870
+applied because we've just copy them over to our style sheet. That's a really
+
+105
+00:08:46,870 --> 00:08:48,600
+useful way of developing.
+
+106
+00:08:48,600 --> 00:08:55,470
+What about this part just up here? Well, all this means is inline styles. So we
+
+107
+00:08:55,470 --> 00:09:02,970
+could, for example, go ahead and set the height of this to 100 pixels, that will
+
+108
+00:09:02,970 --> 00:09:07,529
+apply this on here but you can see that this added the style attribute in here.
+
+109
+00:09:07,529 --> 00:09:12,000
+So you won't often use this but it's useful to know that it's there just in
+
+110
+00:09:12,000 --> 00:09:12,779
+case.
+
+111
+00:09:12,779 --> 00:09:18,329
+So we're going to go ahead and look at these items just here; before that what
+
+112
+00:09:18,329 --> 00:09:22,920
+i'm going to go ahead and do is I'm going to get rid of this style here, i'm
+
+113
+00:09:22,920 --> 00:09:28,860
+going to remove this paragraph and create an anchor; and let's go ahead and
+
+114
+00:09:28,860 --> 00:09:35,069
+say click me. And we'll add a class in here as well just so we can see what we
+
+115
+00:09:35,069 --> 00:09:38,969
+do with classes. So i'm just going to give us a class of link you obviously
+
+116
+00:09:38,970 --> 00:09:44,880
+wouldn't do this but we'll just use it as an example. So I've got this class here
+
+117
+00:09:44,880 --> 00:09:48,120
+called link, I'm not going to add me styles to where we just have this Click me
+
+118
+00:09:48,120 --> 00:09:52,290
+just here. So I click on this you can see that we've got that selector
+
+119
+00:09:52,290 --> 00:09:56,279
+in here, we can just do exactly what we want with it. So you can change the color
+
+120
+00:09:56,279 --> 00:10:00,959
+to red if we want, all that kind of stuff, and we can just go ahead and copy and
+
+121
+00:10:00,959 --> 00:10:05,729
+paste these in. So it works exactly the same way with classes or IDs,
+
+122
+00:10:05,730 --> 00:10:10,680
+any selectors you already have set up really. What we're going to look at now is
+
+123
+00:10:10,680 --> 00:10:12,300
+this button just here.
+
+124
+00:10:12,300 --> 00:10:19,439
+This allows us to add a style in. So basically create a new style role. So if
+
+125
+00:10:19,439 --> 00:10:30,000
+for example you had in your CSS file no styles at all but you
+
+126
+00:10:30,000 --> 00:10:34,889
+have a class of link here, an easy way to just create a selector for this will be
+
+127
+00:10:34,889 --> 00:10:40,170
+to click on this here. It will automatically append the element
+
+128
+00:10:40,170 --> 00:10:42,540
+type as well, you don't really need this in there.
+
+129
+00:10:42,540 --> 00:10:46,889
+What you could then go ahead and do is , just say what I want to be color red,
+
+130
+00:10:46,889 --> 00:10:52,410
+you can go ahead and copy that, head over here, and just paste that in. So it's as
+
+131
+00:10:52,410 --> 00:10:56,639
+easy as that, just makes it a little bit easier; and you could of course just then
+
+132
+00:10:56,639 --> 00:11:00,540
+go ahead and get rid of the element there and just include the class if you
+
+133
+00:11:00,540 --> 00:11:01,469
+wanted to.
+
+134
+00:11:01,470 --> 00:11:05,820
+So pretty straightforward. Now the reason I've chosen a link here is because we
+
+135
+00:11:05,820 --> 00:11:11,700
+have this button just here, and this allows us to toggle different pseudo
+
+136
+00:11:11,700 --> 00:11:18,570
+selectors on our element. So for example if we were to... just get rid of this
+
+137
+00:11:18,570 --> 00:11:25,260
+return to our standard link... we know that when we clicked on link it will turner a
+
+138
+00:11:25,260 --> 00:11:29,640
+purple color by default usually in browsers. So for example if we were to
+
+139
+00:11:29,640 --> 00:11:34,500
+toggle the visited state you can see you might not be able to see this, but very
+
+140
+00:11:34,500 --> 00:11:40,260
+very slightly it's changing the color of that too from blue to purple. So we can
+
+141
+00:11:40,260 --> 00:11:45,180
+also toggle hover, which doesn't do anything in this case; we can toggle
+
+142
+00:11:45,180 --> 00:11:47,699
+active in this case it's going red.
+
+143
+00:11:47,700 --> 00:11:52,170
+So when I click this and hold my cursor in, you can see that that's going red;
+
+144
+00:11:52,170 --> 00:11:56,760
+that's an active state. And we also have a focus state as well, which by default
+
+145
+00:11:56,760 --> 00:12:03,180
+gives this blue border type thing around here. So this allows you to toggle
+
+146
+00:12:03,180 --> 00:12:04,680
+different states.
+
+147
+00:12:04,680 --> 00:12:12,510
+So for example what you could do is, over in your style sheet, you could say link.hover
+
+148
+00:12:12,510 --> 00:12:21,150
+Now when I hover over this i want the font weight to be bold; silly
+
+149
+00:12:21,150 --> 00:12:28,050
+example but just to demonstrate. So with your predefined CSS styles. So we've got
+
+150
+00:12:28,050 --> 00:12:35,339
+hover pseudo selected just here to go hover --- bold. So now when I toggle
+
+151
+00:12:35,340 --> 00:12:41,400
+hover, that toggles the styles within my stylesheet. So whatever you define
+
+152
+00:12:41,400 --> 00:12:46,260
+your style sheet, if you have overridden the default behavior here, is going to
+
+153
+00:12:46,260 --> 00:12:51,540
+toggle them; and you'll notice that that's being made visible as well. So if
+
+154
+00:12:51,540 --> 00:12:55,530
+Somewhere in your styles you have this and you want to go ahead and modify this,
+
+155
+00:12:55,530 --> 00:13:00,930
+you select the item here, click hover you go ahead and add styles to what
+
+156
+00:13:00,930 --> 00:13:04,859
+you want. So we can change the color to red if we wanted to, we could go ahead
+
+157
+00:13:04,860 --> 00:13:09,450
+and copy and paste any styles that we had added as part of that as we saw before,
+
+158
+00:13:10,170 --> 00:13:14,240
+go ahead and refresh and then we have exactly the same
+
+159
+00:13:14,240 --> 00:13:19,610
+a result here. So in terms of the element explorer, there is a lot more that you
+
+160
+00:13:19,610 --> 00:13:24,020
+can do within this, but generally when you are doing front-end development
+
+161
+00:13:24,020 --> 00:13:29,180
+You're going to use what I've showed you just now the most. These are the most
+
+162
+00:13:29,180 --> 00:13:37,550
+used areas of this area here, which is mainly markup and all of your markup
+
+163
+00:13:37,550 --> 00:13:41,180
+on your page, and this every here which relates to your styles.
+
